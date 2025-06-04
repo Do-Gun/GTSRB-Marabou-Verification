@@ -89,6 +89,8 @@ cd model
 
 git clone https://github.com/Do-Gun/GTSRB-Marabou-Verification.git .
 
+conda install pytorch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 pytorch-cuda=12.4 -c pytorch -c nvidia
+
 # 검증 실행
 python verify_marabou.py
 ```
