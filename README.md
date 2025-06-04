@@ -20,7 +20,7 @@ pip install maraboupy
 git clone https://github.com/NeuralNetworkVerification/Marabou.git
 cd Marabou/
 mkdir build
-cd build
+cd build ```
 
 ---
 
