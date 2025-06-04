@@ -90,18 +90,7 @@ git clone https://github.com/Do-Gun/GTSRB-Marabou-Verification.git .
 # 검증 실행
 python verify_marabou.py
 ```
-
-# 7. GTSRB, CNN 모델 검증
-```bash
-# 모델 디렉토리 생성
-mkdir -p model
-cd model
-
-git clone https://github.com/Do-Gun/GTSRB-Marabou-Verification.git .
-
-# 검증 실행
-python verify_marabou.py
-```
+---
 
 # 8. GTSRB, CNN 모델 학습(Optional)
 ```bash
