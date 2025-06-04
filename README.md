@@ -1,6 +1,6 @@
 #  GTSRB Marabou Verification
 
-자율주행 차량에서 사용되는 CNN 모델의 **robustness** 을 검증하는 프로젝트입니다.  
+자율주행 차량에서 사용되는 CNN 모델의 **Robustness** 을 검증하는 프로젝트입니다.  
 GTSRB 교통 표지판 데이터셋을 기반으로 간단한 CNN을 학습한 뒤,  
 ONNX 형식으로 변환하여 **Marabou**로 안정성을 검증합니다.
 
