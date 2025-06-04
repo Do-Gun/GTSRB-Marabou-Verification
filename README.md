@@ -4,9 +4,15 @@
 GTSRB 교통 표지판 데이터셋을 기반으로 간단한 CNN을 학습한 뒤,  
 ONNX 형식으로 변환하여 **Marabou**로 안정성을 검증합니다.
 
+CUDA 12.4
+Python 3.8
+Pytorch 2.4.1
+
+GPU: RTX 3090
+
 ---
 
-## 1. 💻 가상 환경 및 Marabou 설치
+# 1. 가상 환경 및 Marabou 설치
 
 ```bash
 # Conda 가상환경 생성
@@ -24,7 +30,7 @@ cd build
 ```
 
 ---
-## 2. CMake 수동 설치 
+# 2. CMake 수동 설치 
 
 ```bash
 cd ~
@@ -85,7 +91,7 @@ git clone https://github.com/Do-Gun/GTSRB-Marabou-Verification.git .
 python verify_marabou.py
 ```
 
-# 7. GTSRB, CNN 모델 학습 및 검증
+# 7. GTSRB, CNN 모델 검증
 ```bash
 # 모델 디렉토리 생성
 mkdir -p model
@@ -95,6 +101,14 @@ git clone https://github.com/Do-Gun/GTSRB-Marabou-Verification.git .
 
 # 검증 실행
 python verify_marabou.py
+```
+
+# 8. GTSRB, CNN 모델 학습(Optional)
+```bash
+cd model
+
+python GTSRB.py
+python train_gtsrb.py
 ```
 
 
