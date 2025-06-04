@@ -6,8 +6,8 @@ ONNX 형식으로 변환하여 **Marabou**로 안정성을 검증합니다.
 
 ![GTSRB Dataset](https://production-media.paperswithcode.com/datasets/GTSRB-0000000633-9ce3c5f6_Dki5Rsf.jpg)
 
-CUDA 12.4
-Python 3.8
+CUDA 12.4,
+Python 3.8,
 Pytorch 2.4.1
 
 GPU: RTX 3090
