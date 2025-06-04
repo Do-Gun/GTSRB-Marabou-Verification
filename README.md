@@ -17,7 +17,9 @@ git clone https://github.com/NeuralNetworkVerification/Marabou.git
 cd Marabou/
 mkdir build
 cd build
-2. ⚙️ CMake 수동 설치 (sudo 없이)
+
+
+## 2. ⚙️ CMake 수동 설치 (sudo 없이)
 bash
 복사
 편집
