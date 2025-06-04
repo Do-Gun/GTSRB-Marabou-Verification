@@ -4,6 +4,8 @@
 GTSRB 교통 표지판 데이터셋을 기반으로 간단한 CNN을 학습한 뒤,  
 ONNX 형식으로 변환하여 **Marabou**로 안정성을 검증합니다.
 
+![GTSRB Dataset](https://production-media.paperswithcode.com/datasets/GTSRB-0000000633-9ce3c5f6_Dki5Rsf.jpg)
+
 CUDA 12.4
 Python 3.8
 Pytorch 2.4.1
@@ -12,7 +14,7 @@ GPU: RTX 3090
 
 ---
 
-# 1. 가상 환경 및 Marabou 설치
+# 1. 💻 가상 환경 및 Marabou 설치
 
 ```bash
 # Conda 가상환경 생성
@@ -30,7 +32,7 @@ cd build
 ```
 
 ---
-# 2. CMake 수동 설치 
+# 2. ⚙️ CMake 수동 설치 
 
 ```bash
 cd ~
@@ -51,13 +53,13 @@ cmake --version
 ```
 
 ---
-## 3. CMake 경로 등록(매번 수행 필요)
+## 3. 🛠 CMake 경로 등록(매번 수행 필요)
 ```bash
 export PATH=$HOME/local/cmake-install/bin:$PATH
 ```
 
 ---
-# 4. Marabou 빌드하기
+# 4. 🧱 Marabou 빌드하기
 ```bash
 cd ~/Marabou/build
 cmake ..
@@ -65,21 +67,21 @@ cmake --build . -j$(nproc)
 ```
 
 ---
-# 5. Marabou 환경 등록 (매번 수행 필요)
+# 5. 🔧 Marabou 환경 등록 (매번 수행 필요)
 ```bash
 export PYTHONPATH=$PYTHONPATH:/home/dogun/Marabou # 경로 수정 필요
 export JUPYTER_PATH=$JUPYTER_PATH:/home/dogun/Marabou # 경로 수정 필요
 ```
 
 ---
-# 6. 예시 실행 (ACASXU)
+# 6. 🔬 예시 실행 (ACASXU)
 ```bash
 cd ~/Marabou
 ./build/Marabou resources/nnet/acasxu/ACASXU_experimental_v2a_2_7.nnet resources/properties/acas_property_3.txt
 ```
 
 ---
-# 7. GTSRB, CNN 모델 학습 및 검증
+# 7. 🛣️  GTSRB, CNN 모델 학습 및 검증
 ```bash
 # 모델 디렉토리 생성
 mkdir -p model
@@ -92,11 +94,14 @@ python verify_marabou.py
 ```
 ---
 
-# 8. GTSRB, CNN 모델 학습(Optional)
+# 8. 🧪 GTSRB, CNN 모델 학습(Optional)
 ```bash
 cd model
 
+# 데이터 다운로드
 python GTSRB.py
+
+# 훈련 실행
 python train_gtsrb.py
 ```
 
