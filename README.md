@@ -20,7 +20,7 @@ cd build
 
 
 ## 2. ⚙️ CMake 수동 설치 (sudo 없이)
-bash
+```bash
 복사
 편집
 cd ~
