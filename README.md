@@ -62,5 +62,40 @@ cmake --build . -j$(nproc)
 # 5. Marabou 환경 등록 (매번 수행 필요)
 ```bash
 export PYTHONPATH=$PYTHONPATH:/home/dogun/Marabou # 경로 수정 필요
-export JUPYTER_PATH=$JUPYTER_PATH:/home/dogun/Marabou #경로 수정 필요
+export JUPYTER_PATH=$JUPYTER_PATH:/home/dogun/Marabou # 경로 수정 필요
 ```
+
+---
+# 6. 예시 실행 (ACASXU)
+```bash
+cd ~/Marabou
+./build/Marabou resources/nnet/acasxu/ACASXU_experimental_v2a_2_7.nnet resources/properties/acas_property_3.txt
+```
+
+---
+# 7. GTSRB, CNN 모델 학습 및 검증
+```bash
+# 모델 디렉토리 생성
+mkdir -p model
+cd model
+
+git clone https://github.com/Do-Gun/GTSRB-Marabou-Verification.git .
+
+# 검증 실행
+python verify_marabou.py
+```
+
+# 7. GTSRB, CNN 모델 학습 및 검증
+```bash
+# 모델 디렉토리 생성
+mkdir -p model
+cd model
+
+git clone https://github.com/Do-Gun/GTSRB-Marabou-Verification.git .
+
+# 검증 실행
+python verify_marabou.py
+```
+
+
+
